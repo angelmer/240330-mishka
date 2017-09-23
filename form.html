@@ -21,6 +21,7 @@
       </ul>
     </div>
   </nav>
+  <h1 class="header__title">Вязание на заказ</h1>
 </header>
 <main>
 <form class="form" method="post" action="#">
@@ -51,7 +52,7 @@
       <div class="form__color-wrapper">
         <input class="form__color-input" type="checkbox" name="white" checked id="white"/>
         <label class="form__color-label" for="white">белый</label>
-        <input class="form__color-input" type="checkbox" name="grey" id="grey"/>
+        <input class="form__color-input" type="checkbox" name="grey" checked id="grey"/>
         <label class="form__color-label" for="grey">серый</label>
         <input class="form__color-input" type="checkbox" name="tiffany" id="tiffany"/>
         <label class="form__color-label" for="tiffany">тиффани</label>
@@ -70,11 +71,11 @@
       <div class="form__name-wrapper">
         <label class="form__name-label">
           <span class="form__name-family">Фамилия:</span>
-          <input class="form__name-input" type="text" name="last-name" placeholder="Укажите фамилию" required/>
+          <input class="form__name-input" type="text" name="last-name" placeholder="Укажите фамилию*" required/>
         </label>
         <label class="form__name-label">
           <span class="form__name-family">имя:</span>
-          <input class="form__name-input" type="text" name="first-name" placeholder="Введите ваше имя" required/>
+          <input class="form__name-input" type="text" name="first-name" placeholder="Введите ваше имя*" required/>
         </label>
         <label class="form__name-label">
           <span class="form__name-family">отчество:</span>
@@ -87,7 +88,7 @@
         <h2 class="form__title">
           <label class="form__phone-label" for="tel">ТЕЛ</label>
         </h2>
-        <input class="form__phone-input" type="tel" id="tel" placeholder="+7  XXX  XX  XX" required="" pattern="\+*[0-9]{1,11}">
+        <input class="form__phone-input" type="tel" id="tel" placeholder="+7  XXX  XX  XX*" required="" pattern="\+*[0-9]{1,11}">
       </div>
     </div>
     <div class="form__mail">
@@ -95,7 +96,7 @@
         <h2 class="form__title">
           <label class="form__mail-label" for="email">E-MAIL</label>
         </h2>
-        <input class="form__mail-input" type="email" id="email" placeholder="Ваш e-mail" required="">
+        <input class="form__mail-input" type="email" id="email" placeholder="Ваш e-mail*" required="">
       </div>
     </div>
     <div class="form__additional">
@@ -105,7 +106,7 @@
         </h2>
         <textarea class="form__additional-input" id="add-info" rows="6" placeholder="Опишите все ваши пожелания к заказу" required=""></textarea>
         <button class="button form__button-submit" type="submit">Отправить заказ</button>
-        <span class="form__required-info">Все поля являются обязательными</span>
+        <span class="form__required-info"><sup>*</sup>поля обязательны для заполнения</span>
       </div>
     </div>
   </div>
