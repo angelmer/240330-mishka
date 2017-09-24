@@ -24,16 +24,15 @@
   <h1 class="header__title">Вязание на заказ</h1>
 </header>
 <main>
-<form class="form" method="post" action="#">
-  <div class="container">
-    <p class="form__description">
-      <span>
+  <form class="form" method="post" action="#">
+    <div class="form__description">
+      <p class="form__description-item">
         Мы будем рады воплотить в жизнь ваши пожелания!
-      </span>
-      <span>
+      </p>
+      <p class="form__description-item">
         Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.
-      </span>
-    </p>
+      </p>
+    </div>
     <div class="form__type">
       <h2 class="form__title">
         тип
@@ -88,7 +87,8 @@
         <h2 class="form__title">
           <label class="form__phone-label" for="tel">ТЕЛ</label>
         </h2>
-        <input class="form__phone-input" type="tel" id="tel" placeholder="+7  XXX  XX  XX*" required="" pattern="\+*[0-9]{1,11}">
+        <input class="form__phone-input" type="tel" id="tel" placeholder="+7  XXX  XX  XX*" required=""
+               pattern="\+*[0-9]{1,11}">
       </div>
     </div>
     <div class="form__mail">
@@ -104,24 +104,24 @@
         <h2 class="form__title">
           <label class="form__additional-label" for="add-info">ДОП</label>
         </h2>
-        <textarea class="form__additional-input" id="add-info" rows="6" placeholder="Опишите все ваши пожелания к заказу" required=""></textarea>
+          <textarea class="form__additional-input" id="add-info" rows="6"
+                    placeholder="Опишите все ваши пожелания к заказу" required=""></textarea>
         <button class="button form__button-submit" type="submit">Отправить заказ</button>
         <span class="form__required-info"><sup>*</sup>поля обязательны для заполнения</span>
       </div>
     </div>
-  </div>
-</form>
+  </form>
 </main>
 <footer class="footer">
   <div class="social">
     <ul class="social__list">
-      <li class="social__list-item instagram">
+      <li class="social__list-item social__list-item--instagram">
         <a href="#">instagram</a>
       </li>
-      <li class="social__list-item facebook">
+      <li class="social__list-item social__list-item--facebook">
         <a href="#">facebook</a>
       </li>
-      <li class="social__list-item twitter">
+      <li class="social__list-item social__list-item--twitter">
         <a href="#">twitter</a>
       </li>
     </ul>
@@ -131,7 +131,5 @@
     <a class="copyright__logo" href="#"></a>
   </div>
 </footer>
-<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
 </body>
 </html>
