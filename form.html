@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body>
+<header class="header">
+  <nav class="main-menu  main-menu--closed  main-menu--nojs">
+    <div class="header__logo">
+      <h1 class="header__title">
+        <img class="header__mobile" src="#" width="85" height="40" alt="logo"/>
+      </h1>
+    </div>
+    <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
+    <div class="main-menu__wrapper">
+      <ul class="main-menu__items">
+        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Mishka</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог товаров</a></li>
+        <li class="main-menu__item"><a class="main-menu__link">Вязание на заказ</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">поиск по сайту</a></li>
+        <li class="main-menu__item"><a class="main-menu__link" href="#">корзина: пока пуста</a></li>
+      </ul>
+    </div>
+  </nav>
+  <h1 class="header__title">Вязание на заказ</h1>
+</header>
+<main>
+  <form class="form" method="post" action="https://echo.htmlacademy.ru">
+    <div class="form__description">
+      <p class="form__description-item">
+        Мы будем рады воплотить в жизнь ваши пожелания!
+      </p>
+      <p class="form__description-item">
+        Заполните простую форму заказа и мы свяжемся с вами чтобы уточнить детали.
+      </p>
+    </div>
+    <div class="form__type">
+      <h2 class="form__title">
+        тип
+      </h2>
+      <div class="form__type-wrapper">
+        <input class="form__type-input" type="radio" name="type" checked id="accessory"/>
+        <label class="form__type-label" for="accessory">Аксессуар для интерьера</label>
+        <input class="form__type-input" type="radio" name="type" id="toy"/>
+        <label class="form__type-label" for="toy">Детская игрушка</label>
+      </div>
+    </div>
+    <div class="form__color">
+      <h2 class="form__title">
+        цвет
+      </h2>
+      <div class="form__color-wrapper">
+        <input class="form__color-input" type="checkbox" name="white" checked id="white"/>
+        <label class="form__color-label" for="white">белый</label>
+        <input class="form__color-input" type="checkbox" name="grey" checked id="grey"/>
+        <label class="form__color-label" for="grey">серый</label>
+        <input class="form__color-input" type="checkbox" name="tiffany" id="tiffany"/>
+        <label class="form__color-label" for="tiffany">тиффани</label>
+        <input class="form__color-input" type="checkbox" name="black" id="black"/>
+        <label class="form__color-label" for="black">чёрный</label>
+        <input class="form__color-input" type="checkbox" name="pink" id="pink"/>
+        <label class="form__color-label" for="pink">розовый</label>
+        <input class="form__color-input" type="checkbox" name="orange" id="orange"/>
+        <label class="form__color-label" for="orange">оранжевый</label>
+      </div>
+    </div>
+    <div class="form__name">
+      <h2 class="form__title">
+        фио
+      </h2>
+      <div class="form__name-wrapper">
+        <label class="form__name-label">
+          <span class="form__name-family">Фамилия:</span>
+          <input class="form__name-input" type="text" name="last-name" placeholder="Укажите фамилию*" required/>
+        </label>
+        <label class="form__name-label">
+          <span class="form__name-family">имя:</span>
+          <input class="form__name-input" type="text" name="first-name" placeholder="Введите ваше имя*" required/>
+        </label>
+        <label class="form__name-label">
+          <span class="form__name-family">отчество:</span>
+          <input class="form__name-input" type="text" name="middle-name" placeholder="Отчество, если желаете"/>
+        </label>
+      </div>
+    </div>
+    <div class="form__phone">
+      <div class="form__phone-wrapper">
+        <h2 class="form__title">
+          <label class="form__phone-label" for="tel">ТЕЛ</label>
+        </h2>
+        <input class="form__phone-input" type="tel" id="tel" placeholder="+7  XXX  XX  XX*" required pattern="\+*[0-9]{1,11}">
+      </div>
+    </div>
+    <div class="form__mail">
+      <div class="form__mail-wrapper">
+        <h2 class="form__title">
+          <label class="form__mail-label" for="email">E-MAIL</label>
+        </h2>
+        <input class="form__mail-input" type="email" id="email" placeholder="Ваш e-mail*" required="">
+      </div>
+    </div>
+    <div class="form__additional">
+      <div class="form__additional-wrapper">
+        <h2 class="form__title">
+          <label class="form__additional-label" for="add-info">ДОП</label>
+        </h2>
+          <textarea class="form__additional-input" id="add-info" rows="6"
+                    placeholder="Опишите все ваши пожелания к заказу" required=""></textarea>
+        <button class="button form__button-submit" type="submit">Отправить заказ</button>
+        <span class="form__required-info"><sup>*</sup>поля обязательны для заполнения</span>
+      </div>
+    </div>
+  </form>
+</main>
+<footer class="footer">
+  <div class="social">
+    <ul class="social__list">
+      <li class="social__list-item social__list-item--instagram">
+        <a href="#">instagram</a>
+      </li>
+      <li class="social__list-item social__list-item--facebook">
+        <a href="#">facebook</a>
+      </li>
+      <li class="social__list-item social__list-item--twitter">
+        <a href="#">twitter</a>
+      </li>
+    </ul>
+  </div>
+  <div class="copyright">
+    <span>Разработано:</span>
+    <a class="copyright__logo" href="#"></a>
+  </div>
+</footer>
+</body>
+</html>
