@@ -3,39 +3,69 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
 <header class="header">
   <nav class="main-menu  main-menu--closed  main-menu--nojs">
-    <div class="header__logo">
-      <div class="header__title">
-        <img class="header__mobile" src="#" width="85" height="40" alt="logo"/>
-      </div>
-    </div>
     <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
     <div class="main-menu__wrapper">
       <ul class="main-menu__items">
-        <li class="main-menu__item"><a class="main-menu__link">Mishka</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог товаров</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="form.html">Вязание на заказ</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">поиск по сайту</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">корзина: пока пуста</a></li>
+        <li class="main-menu__item">
+          <a class="main-menu__link">
+            <div class="header__logo">
+              <div class="header__title">mishka
+                <img class="header__mobile" src="img/logo-mobile.svg" width="85" height="40" alt="logo"/>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="form.html">
+            Вязание на заказ
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">
+            поиск по сайту
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">
+            корзина: пока пуста
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
-  <h1 class="main__title-text">
-    милые штучки ручной работы для дома
-  </h1>
 </header>
 <main class="main">
-  <section class="navigation__menu">
-    <ul class="navigation__menu-button">
-      <li class="navigation__menu-item"><a href="#">предметы интерьера</a></li>
-      <li class="navigation__menu-item"><a href="#">детские игрушки</a></li>
+  <div class="main__wrapper main__wrapper--first">
+    <h1 class="main__title">
+      Милые штучки ручной работы для дома
+    </h1>
+  </div>
+  <section class="navigation">
+    <ul class="navigation__button">
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">
+          предметы интерьера
+        </a>
+        </li>
+      <li class="navigation__item">
+      <a class="navigation__link" href="#">
+        детские игрушки
+      </a>
+    </li>
     </ul>
   </section>
   <article class="best-goods">
-    <h2 class="best-goods__title">вязанные корзинки</h2>
+    <h2 class="best-goods__title">Вязанные корзинки</h2>
     <span class="best-goods__type">товар недели</span>
     <div class="best-goods__wrapper">
       <p class="best-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
@@ -57,7 +87,7 @@
         </tbody>
       </table>
       <div class="best-goods__image">
-        <img src="#" width="260" height="316" alt="вязанные корзинки"/>
+        <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="вязанные корзинки"/>
       </div>
       <div class="best-goods__price">
         <span class="best-goods__price-value">цена: 990 руб.</span>
@@ -68,12 +98,24 @@
   <section class="about-us">
     <h2 class="about-us__title">коротко о нас</h2>
     <ul class="about-us__list">
-      <li class="about-us__item">Экологически чистые материалы</li>
-      <li class="about-us__item">Скандинавский стиль по российской цене</li>
-      <li class="about-us__item">Увеличивает лайки на фотографиях</li>
-      <li class="about-us__item">Связано вручную с любовью и умилением</li>
-      <li class="about-us__item">Поддержка отечественного проризводителя</li>
-      <li class="about-us__item">Поставляется в подарочной упаковке</li>
+      <li class="about-us__item">
+        Экологически чистые материалы
+      </li>
+      <li class="about-us__item">
+        Скандинавский стиль по российской цене
+      </li>
+      <li class="about-us__item">
+        Увеличивает лайки на фотографиях
+      </li>
+      <li class="about-us__item">
+        Связано вручную с любовью и умилением
+      </li>
+      <li class="about-us__item">
+        Поддержка отечественного проризводителя
+      </li>
+      <li class="about-us__item">
+        Поставляется в подарочной упаковке
+      </li>
     </ul>
   </section>
   <section class="reviews">
@@ -88,9 +130,9 @@
         <a href="#" class="reviews__autor-mail">@misssssiskras</a>
       </li>
     </ul>
-    <div class="reviews__slider-control">
-      <div class="slider__left"></div>
-      <div class="slider__right"></div>
+    <div class="reviews__slider">
+      <div class="reviews__slider-left"></div>
+      <div class="reviews__slider-right"></div>
     </div>
     <a class="reviews__button button" href="#">Написать</a>
   </section>
@@ -102,7 +144,7 @@
       <p class="contacts__list-item">
         e-mail
       </p>
-      <a class="contacts__list-item" href="mailto:info@mimimishkashop.ru">
+      <a class="contacts__list-item contacts__list-item--link" href="mailto:info@mimimishkashop.ru">
         info@mimimishkashop.ru
       </a>
       <p class="contacts__list-item">
@@ -122,14 +164,14 @@
 <footer class="footer">
   <div class="social">
     <ul class="social__list">
-      <li class="social__list-item social__list-item--instagram">
-        <a href="#">instagram</a>
+      <li class="social__list-item">instagram
+        <a class="social__list-link social__list-link--instagram" href="#"></a>
       </li>
-      <li class="social__list-item social__list-item--facebook">
-        <a href="#">facebook</a>
+      <li class="social__list-item">facebook
+        <a class="social__list-link social__list-link--facebook" href="#"></a>
       </li>
-      <li class="social__list-item social__list-item--twitter">
-        <a href="#">twitter</a>
+      <li class="social__list-item">twitter
+        <a class="social__list-link social__list-link--twitter" href="#"></a>
       </li>
     </ul>
   </div>
@@ -145,13 +187,13 @@
   <p class="modal__choose">
     Выберите размер:
   </p>
-  <label for="size-s">S
+  <label class="modal__item" for="size-s">S
     <input type="radio" name="size" id="size-s" class="modal__size modal__size--s"/>
   </label>
-  <label for="size-m">M
+  <label class="modal__item" for="size-m">M
     <input type="radio" name="size" id="size-m" class="modal__size modal__size--m"/>
   </label>
-  <label for="size-l">L
+  <label class="modal__item" for="size-l">L
     <input type="radio" name="size" id="size-l" class="modal__size modal__size--l"/>
   </label>
   <button type="submit" class="button modal__button">добавить</button>

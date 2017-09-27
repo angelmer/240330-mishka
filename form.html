@@ -3,29 +3,53 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
 <header class="header">
   <nav class="main-menu  main-menu--closed  main-menu--nojs">
-    <div class="header__logo">
-      <h1 class="header__title">
-        <img class="header__mobile" src="#" width="85" height="40" alt="logo"/>
-      </h1>
-    </div>
     <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
     <div class="main-menu__wrapper">
       <ul class="main-menu__items">
-        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Mishka</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="catalog.html">Каталог товаров</a></li>
-        <li class="main-menu__item"><a class="main-menu__link">Вязание на заказ</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">поиск по сайту</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">корзина: пока пуста</a></li>
+        <li class="main-menu__item">
+          <a href="index.html" class="main-menu__link">
+            <div class="header__logo">
+              <div class="header__title">mishka
+                <img class="header__mobile" src="img/logo-mobile.svg" width="85" height="40" alt="logo"/>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link">
+            Вязание на заказ
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">
+            поиск по сайту
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">
+            корзина: пока пуста
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
-  <h1 class="header__title">Вязание на заказ</h1>
 </header>
-<main>
+<main class="main">
+  <div class="main__wrapper">
+    <h1 class="main__title">
+      Вязание на заказ
+    </h1>
+  </div>
   <form class="form" method="post" action="https://echo.htmlacademy.ru">
     <div class="form__description">
       <p class="form__description-item">
@@ -37,7 +61,7 @@
     </div>
     <div class="form__type">
       <h2 class="form__title">
-        тип
+        ТИП
       </h2>
       <div class="form__type-wrapper">
         <input class="form__type-input" type="radio" name="type" checked id="accessory"/>
@@ -48,7 +72,7 @@
     </div>
     <div class="form__color">
       <h2 class="form__title">
-        цвет
+        ЦВЕТ
       </h2>
       <div class="form__color-wrapper">
         <input class="form__color-input" type="checkbox" name="white" checked id="white"/>
@@ -67,7 +91,7 @@
     </div>
     <div class="form__name">
       <h2 class="form__title">
-        фио
+        ФИО
       </h2>
       <div class="form__name-wrapper">
         <label class="form__name-label">
@@ -75,11 +99,11 @@
           <input class="form__name-input" type="text" name="last-name" placeholder="Укажите фамилию*" required/>
         </label>
         <label class="form__name-label">
-          <span class="form__name-family">имя:</span>
+          <span class="form__name-family">Имя:</span>
           <input class="form__name-input" type="text" name="first-name" placeholder="Введите ваше имя*" required/>
         </label>
         <label class="form__name-label">
-          <span class="form__name-family">отчество:</span>
+          <span class="form__name-family">Отчество:</span>
           <input class="form__name-input" type="text" name="middle-name" placeholder="Отчество, если желаете"/>
         </label>
       </div>
@@ -116,14 +140,14 @@
 <footer class="footer">
   <div class="social">
     <ul class="social__list">
-      <li class="social__list-item social__list-item--instagram">
-        <a href="#">instagram</a>
+      <li class="social__list-item">instagram
+        <a class="social__list-link social__list-link--instagram" href="#"></a>
       </li>
-      <li class="social__list-item social__list-item--facebook">
-        <a href="#">facebook</a>
+      <li class="social__list-item">facebook
+        <a class="social__list-link social__list-link--facebook" href="#"></a>
       </li>
-      <li class="social__list-item social__list-item--twitter">
-        <a href="#">twitter</a>
+      <li class="social__list-item">twitter
+        <a class="social__list-link social__list-link--twitter" href="#"></a>
       </li>
     </ul>
   </div>

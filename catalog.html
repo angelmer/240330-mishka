@@ -3,32 +3,56 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
 <header class="header">
   <nav class="main-menu  main-menu--closed  main-menu--nojs">
-    <div class="header__logo">
-      <h1 class="header__title">
-        <img class="header__mobile" src="#" width="85" height="40" alt="logo"/>
-      </h1>
-    </div>
     <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
     <div class="main-menu__wrapper">
       <ul class="main-menu__items">
-        <li class="main-menu__item"><a class="main-menu__link" href="index.html">Mishka</a></li>
-        <li class="main-menu__item"><a class="main-menu__link">Каталог товаров</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="form.html">Вязание на заказ</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">поиск по сайту</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#">корзина: пока пуста</a></li>
+        <li class="main-menu__item">
+          <a href="index.html" class="main-menu__link">
+            <div class="header__logo">
+              <div class="header__title">mishka
+                <img class="header__mobile" src="img/logo-mobile.svg" width="85" height="40" alt="logo"/>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link">
+            Каталог товаров
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="form.html">
+            Вязание на заказ
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">
+            поиск по сайту
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="#">
+            корзина: пока пуста
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
-  <h1 class="header__title">Каталог товаров</h1>
 </header>
-<main>
+<main class="main">
+  <div class="main__wrapper">
+    <h1 class="main__title">
+      Каталог товаров
+    </h1>
+  </div>
   <article class="product">
-    <a class="product__image" href="#">
-      <img src="#" width="260" height="195" alt="зайчик попрыгайчик"/>
+    <a class="product__item" href="#">
+      <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="зайчик попрыгайчик"/>
     </a>
     <div class="product__description">
       <h2 class="product__description-title">
@@ -49,8 +73,8 @@
     </div>
   </article>
   <article class="product">
-    <a class="product__image" href="#">
-      <img src="#" width="260" height="195" alt="корзинка для белья"/>
+    <a class="product__item" href="#">
+      <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="корзинка для белья"/>
     </a>
     <div class="product__description">
       <h2 class="product__description-title">
@@ -71,8 +95,8 @@
     </div>
   </article>
   <article class="product">
-    <a class="product__image" href="#">
-      <img src="#" width="260" height="195" alt="большая корзина для игрушек"/>
+    <a class="product__item" href="#">
+      <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="большая корзина для игрушек"/>
     </a>
     <div class="product__description">
       <h2 class="product__description-title">
@@ -96,8 +120,8 @@
     <h2 class="product-video__title">
       Процесс производства
     </h2>
-    <div class="product-video__image">
-      <img src="#" width="260" height="150" alt="процесс производства"/>
+    <div class="product-video__item">
+      <img class="product-video__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="процесс производства"/>
     </div>
     <div class="product-video__info">
       <p class="product-video__description">
@@ -112,14 +136,14 @@
 <footer class="footer">
   <div class="social">
     <ul class="social__list">
-      <li class="social__list-item social__list-item--instagram">
-        <a href="#">instagram</a>
+      <li class="social__list-item">instagram
+        <a class="social__list-link social__list-link--instagram" href="#"></a>
       </li>
-      <li class="social__list-item social__list-item--facebook">
-        <a href="#">facebook</a>
+      <li class="social__list-item">facebook
+        <a class="social__list-link social__list-link--facebook" href="#"></a>
       </li>
-      <li class="social__list-item social__list-item--twitter">
-        <a href="#">twitter</a>
+      <li class="social__list-item">twitter
+        <a class="social__list-link social__list-link--twitter" href="#"></a>
       </li>
     </ul>
   </div>
@@ -135,13 +159,13 @@
   <p class="modal__choose">
     Выберите размер:
   </p>
-  <label for="size-s">S
+  <label class="modal__item" for="size-s">S
     <input type="radio" name="size" id="size-s" class="modal__size modal__size--s"/>
   </label>
-  <label for="size-m">M
+  <label class="modal__item" for="size-m">M
     <input type="radio" name="size" id="size-m" class="modal__size modal__size--m"/>
   </label>
-  <label for="size-l">L
+  <label class="modal__item" for="size-l">L
     <input type="radio" name="size" id="size-l" class="modal__size modal__size--l"/>
   </label>
   <button type="submit" class="button modal__button">добавить</button>
