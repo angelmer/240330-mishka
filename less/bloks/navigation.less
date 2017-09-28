@@ -3,15 +3,27 @@
   margin: 0;
 }
 .navigation__item {
-  list-style: none;
   margin: 0;
+  list-style: none;
+}
+.navigation__item:first-child .navigation__link {
+  background: url(../../img/icon-interior.svg) no-repeat;
+  background-color: @brand-color;
+  background-position: 85% 50%;
+}
+.navigation__item:nth-child(2) .navigation__link {
+  background: url(../../img/icon-toy.svg) no-repeat;
+  background-color: @brand-color;
+  background-position: 90% 50%;
 }
 .navigation__link {
-  padding: 20px;
   display: block;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 28px;
+  padding-right: 130px;
   text-decoration: none;
   font-size: 19px;
   font-weight: bold;
   color: @white-color;
-  background-color: @brand-color;
 }
