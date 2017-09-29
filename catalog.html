@@ -7,9 +7,10 @@
 </head>
 <body>
 <header class="header">
-  <nav class="main-menu  main-menu--closed  main-menu--nojs">
-    <div class="main-menu__wrapper">
-      <ul class="main-menu__items">
+  <div class="container">
+    <nav class="main-menu  main-menu--closed  main-menu--nojs">
+      <div class="main-menu__wrapper">
+        <ul class="main-menu__items">
           <li class="main-menu__item">
             <a href="index.html" class="main-menu__link">
               <div class="main-menu__logo">mishka
@@ -18,29 +19,30 @@
             </a>
             <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
           </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link">
-            Каталог товаров
-          </a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="form.html">
-            Вязание на заказ
-          </a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">
-            поиск по сайту
-          </a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="#">
-            корзина: пока пуста
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+          <li class="main-menu__item">
+            <a class="main-menu__link">
+              Каталог товаров
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="form.html">
+              Вязание на заказ
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">
+              поиск по сайту
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">
+              корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 <main class="main">
   <div class="main__wrapper">
@@ -48,125 +50,135 @@
       Каталог товаров
     </h1>
   </div>
-  <article class="product">
-    <a class="product__item" href="#">
-      <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195" alt="зайчик попрыгайчик"/>
-    </a>
-    <div class="product__description">
-      <h2 class="product__description-title">
-        <a class="product__description-link">
-          Зайчик попрыгайчик
-        </a>
+  <div class="container">
+    <article class="product">
+      <a class="product__item" href="#">
+        <img class="product__image" src="img/photo-hare-mobile@1x.jpg" width="260" height="195"
+             alt="зайчик попрыгайчик"/>
+      </a>
+      <div class="product__description">
+        <h2 class="product__description-title">
+          <a class="product__description-link">
+            Зайчик попрыгайчик
+          </a>
+        </h2>
+        <p class="product__size">
+          Рост 30 см, вес 200 г
+        </p>
+        <div class="product__order">
+          <a class="product__order-price">
+            1200 руб.
+          </a>
+          <a href="#" class="product__order-basket">
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="product">
+      <a class="product__item" href="#">
+        <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195"
+             alt="корзинка для белья"/>
+      </a>
+      <div class="product__description">
+        <h2 class="product__description-title">
+          <a class="product__description-link">
+            Корзинка для белья
+          </a>
+        </h2>
+        <p class="product__size">
+          диаметр 15 см, высота 10 см
+        </p>
+        <div class="product__order">
+          <a class="product__order-price">
+            690 руб.
+          </a>
+          <a href="#" class="product__order-basket">
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="product">
+      <a class="product__item" href="#">
+        <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195"
+             alt="большая корзина для игрушек"/>
+      </a>
+      <div class="product__description">
+        <h2 class="product__description-title">
+          <a class="product__description-link">
+            Большая корзинка для игрушек
+          </a>
+        </h2>
+        <p class="product__size">
+          диаметр 30 см, высота 30 см
+        </p>
+        <div class="product__order">
+          <a class="product__order-price">
+            1500 руб.
+          </a>
+          <a href="#" class="product__order-basket">
+          </a>
+        </div>
+      </div>
+    </article>
+    <article class="product-video">
+      <h2 class="product-video__title">
+        Процесс производства
       </h2>
-      <p class="product__size">
-        Рост 30 см, вес 200 г
-      </p>
-    </div>
-    <div class="product__order">
-      <a class="product__order-price">
-        1200 руб.
-      </a>
-      <a href="#" class="product__order-basket">
-      </a>
-    </div>
-  </article>
-  <article class="product">
-    <a class="product__item" href="#">
-      <img class="product__image" src="img/photo-bowl-mobile@1x.jpg" width="260" height="195" alt="корзинка для белья"/>
-    </a>
-    <div class="product__description">
-      <h2 class="product__description-title">
-        <a class="product__description-link">
-          Корзинка для белья
+      <div class="product-video__item">
+        <img class="product-video__image" src="img/video-mobile@1x.jpg" width="260" height="150"
+             alt="процесс производства"/>
+      </div>
+      <div class="product-video__info">
+        <p class="product-video__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="product-video__button button" href="#">
+          Сделать заказ
         </a>
-      </h2>
-      <p class="product__size">
-        диаметр 15 см, высота 10 см
-      </p>
-    </div>
-    <div class="product__order">
-      <a class="product__order-price">
-        690 руб.
-      </a>
-      <a href="#" class="product__order-basket">
-      </a>
-    </div>
-  </article>
-  <article class="product">
-    <a class="product__item" href="#">
-      <img class="product__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="большая корзина для игрушек"/>
-    </a>
-    <div class="product__description">
-      <h2 class="product__description-title">
-        <a class="product__description-link">
-          Большая корзинка для игрушек
-        </a>
-      </h2>
-      <p class="product__size">
-        диаметр 30 см, высота 30 см
-      </p>
-    </div>
-    <div class="product__order">
-      <a class="product__order-price">
-        1500 руб.
-      </a>
-      <a href="#" class="product__order-basket">
-      </a>
-    </div>
-  </article>
-  <article class="product-video">
-    <h2 class="product-video__title">
-      Процесс производства
-    </h2>
-    <div class="product-video__item">
-      <img class="product-video__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="процесс производства"/>
-    </div>
-    <div class="product-video__info">
-      <p class="product-video__description">
-        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-      </p>
-      <a class="product-video__button button" href="#">
-        Сделать заказ
-      </a>
-    </div>
-  </article>
+      </div>
+    </article>
+  </div>
 </main>
 <footer class="footer">
-  <div class="social">
-    <ul class="social__list">
-      <li class="social__list-item">instagram
-        <a class="social__list-link social__list-link--instagram" href="#"></a>
-      </li>
-      <li class="social__list-item">facebook
-        <a class="social__list-link social__list-link--facebook" href="#"></a>
-      </li>
-      <li class="social__list-item">twitter
-        <a class="social__list-link social__list-link--twitter" href="#"></a>
-      </li>
-    </ul>
-  </div>
-  <div class="copyright">
-    <span>Разработано:</span>
-    <a class="copyright__logo" href="#"></a>
+  <div class="container">
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__list-item">instagram
+          <a class="social__list-link social__list-link--instagram" href="#"></a>
+        </li>
+        <li class="social__list-item">facebook
+          <a class="social__list-link social__list-link--facebook" href="#"></a>
+        </li>
+        <li class="social__list-item">twitter
+          <a class="social__list-link social__list-link--twitter" href="#"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <span>Разработано:</span>
+      <a class="copyright__logo" href="#"></a>
+    </div>
   </div>
 </footer>
-<form class="modal" method="post" action="https://echo.htmlacademy.ru">
-  <h2 class="modal__title">
-    Добавить в корзину
-  </h2>
-  <p class="modal__choose">
-    Выберите размер:
-  </p>
-  <label class="modal__item" for="size-s">S
-    <input type="radio" name="size" id="size-s" class="modal__size modal__size--s"/>
-  </label>
-  <label class="modal__item" for="size-m">M
-    <input type="radio" name="size" id="size-m" class="modal__size modal__size--m"/>
-  </label>
-  <label class="modal__item" for="size-l">L
-    <input type="radio" name="size" id="size-l" class="modal__size modal__size--l"/>
-  </label>
-  <button type="submit" class="button modal__button">добавить</button>
-</form>
+<div class="container">
+  <form class="modal" method="post" action="https://echo.htmlacademy.ru">
+    <h2 class="modal__title">
+      Добавить в корзину
+    </h2>
+    <p class="modal__choose">
+      Выберите размер:
+    </p>
+    <label class="modal__item" for="size-s">S
+      <input type="radio" name="size" id="size-s" class="modal__size modal__size--s"/>
+    </label>
+    <label class="modal__item" for="size-m">M
+      <input type="radio" name="size" id="size-m" class="modal__size modal__size--m"/>
+    </label>
+    <label class="modal__item" for="size-l">L
+      <input type="radio" name="size" id="size-l" class="modal__size modal__size--l"/>
+    </label>
+    <button type="submit" class="button modal__button">добавить</button>
+  </form>
+</div>
 </body>
 </html>
