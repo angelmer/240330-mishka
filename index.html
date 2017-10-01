@@ -68,7 +68,7 @@
     </div>
   </div>
   <section class="navigation">
-    <div class="container__navigation">
+    <div class="container">
       <ul class="navigation__button">
         <li class="navigation__item">
           <a class="navigation__link" href="#">
@@ -85,8 +85,10 @@
   </section>
   <div class="container">
     <article class="best-goods">
-      <h2 class="best-goods__title">Вязаные корзинки</h2>
-      <span class="best-goods__type">товар недели</span>
+      <div class="best-goods__wrapper">
+        <h2 class="best-goods__title">Вязаные корзинки</h2>
+        <span class="best-goods__type">товар недели</span>
+      </div>
       <div class="best-goods__wrapper">
         <p class="best-goods__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках,
           и трех размерах.</p>
@@ -120,6 +122,7 @@
   <div class="container">
     <section class="about-us">
       <h2 class="about-us__title">Коротко о нас:</h2>
+      <div class="about-us__wrapper">
       <ul class="about-us__list">
         <li class="about-us__item about-us__item--flower">
           Экологически чистые материалы
@@ -130,6 +133,8 @@
         <li class="about-us__item about-us__item--heart">
           Увеличивает лайки на фотографиях
         </li>
+      </ul>
+      <ul class="about-us__list">
         <li class="about-us__item about-us__item--ball">
           Связано вручную с любовью и умилением
         </li>
@@ -140,6 +145,7 @@
           Поставляется в подарочной упаковке
         </li>
       </ul>
+      </div>
     </section>
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
@@ -147,13 +153,15 @@
         <li class="reviews__item">
           <blockquote class="reviews__item-text">Я молодая мама, но всё равно фотографии не набирали и близко такого
             количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-            и мои фотографии сразу стали более стильнЫМИ, а также набирают больше лайков!
+            и мои фотографии сразу стали более стильными, а также набирают больше лайков!
           </blockquote>
-          <div class="reviews__author">Анастасия Красильникова</div>
-          <a href="#" class="reviews__autor-mail">@misssssiskras</a>
         </li>
       </ul>
-      <div class="reviews__slider">
+      <div class="reviews__author">
+        <p class="reviews__author-name">Анастасия Красильникова</p>
+      <a href="#" class="reviews__autor-mail">@misssssiskras</a>
+      </div>
+      <div class="reviews__slider-control">
         <div class="reviews__slider-left"></div>
         <div class="reviews__slider-right"></div>
       </div>
@@ -192,22 +200,29 @@
 </main>
 <footer class="footer">
   <div class="container">
-    <div class="social">
-      <ul class="social__list">
-        <li class="social__list-item">instagram
-          <a class="social__list-link social__list-link--instagram" href="#"></a>
-        </li>
-        <li class="social__list-item">facebook
-          <a class="social__list-link social__list-link--facebook" href="#"></a>
-        </li>
-        <li class="social__list-item">twitter
-          <a class="social__list-link social__list-link--twitter" href="#"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <span>Разработано:</span>
-      <a class="copyright__logo" href="#"></a>
+    <div class="footer__wrapper">
+      <div class="footer__logo">
+        <a class="footer__logo-item">mishka
+          <img class="footer__logo-image" src="img/logo-mobile.svg" width="85" height="40" alt="logo"/>
+        </a>
+      </div>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__list-item">instagram
+            <a class="social__list-link social__list-link--instagram" href="#"></a>
+          </li>
+          <li class="social__list-item">facebook
+            <a class="social__list-link social__list-link--facebook" href="#"></a>
+          </li>
+          <li class="social__list-item">twitter
+            <a class="social__list-link social__list-link--twitter" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <span>Разработано:</span>
+        <a class="copyright__logo" href="#"></a>
+      </div>
     </div>
   </div>
 </footer>

@@ -60,3 +60,38 @@
   text-decoration: none;
   color: @black-color;
 }
+
+@media (min-width: 768px) {
+  .best-goods__wrapper {
+    display: flex;
+  }
+
+  .best-goods__wrapper:nth-child(2) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .best-goods__title {
+    margin: 0;
+  }
+
+  .best-goods__description {
+    width: 300px;
+    margin: 0;
+  }
+
+  .best-goods__table {
+    order: 2;
+    margin-top: -245px;
+  }
+
+  .best-goods__image  {
+    margin-left: auto;
+    order: 1;
+  }
+
+  .best-goods__price {
+    margin-right: auto;
+    order: 3;
+  }
+}
