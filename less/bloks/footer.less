@@ -1,3 +1,23 @@
 .footer {
   background-color: @basic-color;
 }
+
+@media (max-width: 768px) {
+  .footer__logo {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__wrapper {
+    display: flex;
+  }
+
+  .footer__logo-item {
+    font-size: 0;
+  }
+
+  .footer__logo {
+    padding-top: 50px;
+  }
+}

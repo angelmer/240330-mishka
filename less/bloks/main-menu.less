@@ -81,22 +81,30 @@
   }
 
   .main-menu__item:first-child {
-    width: 321px;
+    width: 318px;
+    padding: 0;
+    border-right: 1px solid @header-border;
   }
 
   .main-menu__item:nth-child(2) {
     width: 155px;
+    padding-top: 18px;
     order: 1;
+    font-size: 15px;
   }
 
   .main-menu__item:nth-child(3) {
     width: 155px;
+    padding-top: 18px;
+    padding-left: 14px;
     order: 2;
+    font-size: 15px;
   }
 
   .main-menu__item:nth-child(4) {
     font-size: 0;
     width: 83px;
+    border-right: 1px solid @header-border;
   }
 
   .main-menu__item:nth-child(4)::after {
@@ -104,29 +112,54 @@
   }
 
   .main-menu__item:nth-child(5) {
-    padding: 0;
-    width: 264px;
+    width: 267px;
+    padding-top: 32px;
+    padding-left: 85px;
   }
 
   .main-menu__item:nth-child(6) {
     margin-left: auto;
+    padding-top: 18px;
+    padding-right: 5px;
     order: 3;
+    font-size: 15px;
+  }
+  .main-menu__item:nth-child(6) .main-menu__link {
+    font-weight: 100;
+  }
+
+  .main-menu__logo {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-bottom: 22px;
+  }
+
+  .main-menu__item:nth-child(4)::after {
+    top: 36px;
+    left: 35px;
   }
 }
 
 @media (min-width: 1250px) {
   .main-menu__item:first-child {
-    width: 321px;
+    width: 325px;
+    padding-left: 90px;
     order: 2;
   }
 
   .main-menu__item:nth-child(2) {
-    width: 155px;
+    width: 184px;
+    padding-top: 32px;
+    font-size: 17px;
+    border-right: 1px solid @header-border;
   }
 
   .main-menu__item:nth-child(3) {
-    width: 155px;
+    width: 190px;
+    padding-top: 32px;
+    padding-left: 34px;
     order: 1;
+    font-size: 17px;
   }
 
   .main-menu__item:nth-child(4) {
@@ -136,22 +169,28 @@
   }
 
   .main-menu__item:nth-child(4)::after {
-    top: 10px;
+    top: 37px;
   }
 
   .main-menu__item:nth-child(5) {
-    width: 264px;
-    padding: 0;
+    width: 267px;
     order: 4;
   }
 
   .main-menu__item:nth-child(6) {
     order: 7;
   }
+
   .main-menu__item:nth-child(7) {
+    padding-top: 18px;
     order: 5;
+    font-size: 15px;
   }
+
   .main-menu__item:nth-child(8) {
+    padding-top: 18px;
+    padding-left: 60px;
     order: 6;
+    font-size: 15px;
   }
 }

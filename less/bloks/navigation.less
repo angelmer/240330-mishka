@@ -37,6 +37,25 @@
     display: flex;
   }
 
-  .navigation__link {
+  .navigation__item {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .navigation__item:first-child .navigation__link {
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-right: 75px;
+  }
+
+  .navigation__item:nth-child(2) .navigation__link {
+    padding-top: 30px;
+    padding-left: 43px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .navigation__item {
+    width: 525px;
   }
 }
