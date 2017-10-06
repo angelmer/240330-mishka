@@ -1,9 +1,9 @@
-.form {
+.form:nth-child(2) {
   padding-top: 22px;
-  padding-bottom: 55px;
 }
 
 .form__title {
+  margin: 0;
   font-size: 17px;
   line-height: 16px;
   color: @brand-color;
@@ -18,11 +18,11 @@
 }
 
 .form__type {
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 .form__type-items {
-  padding-top: 20px;
+  padding-top: 35px;
 }
 
 .form__type-label {
@@ -62,11 +62,12 @@
 }
 
 .form__color {
-  padding-top: 5px;
+  padding-top: 16px;
 }
 
 .form__color-items {
-  padding-top: 20px;
+  padding-top: 25px;
+  padding-left: 1px;
 }
 
 .form__color-input {
@@ -74,37 +75,58 @@
 }
 
 .form__color-label::before {
-  content: "";
-  width: 36px;
-  height: 35px;
+  font-size: 17px;
+  font-weight: bold;
   position: absolute;
-  top: -10px;
-  left: -64px;
-  border: 2px solid @font-color;
+  top: 6px;
+  left: 60px;
+}
+
+.form__color-item:nth-child(1) .form__color-label::before {
+  content: "Белый";
+}
+
+.form__color-item:nth-child(2) .form__color-label::before {
+  content: "Серый";
+}
+
+.form__color-item:nth-child(3) .form__color-label::before {
+  content: "«Тиффани»";
+}
+
+.form__color-item:nth-child(4) .form__color-label::before {
+  content: "Чёрный";
+}
+
+.form__color-item:nth-child(5) .form__color-label::before {
+  content: "Розовый";
+}
+
+.form__color-item:nth-child(6) .form__color-label::before {
+  content: "Оранжевый";
 }
 
 .form__color-label {
-  display: block;
   position: relative;
-  margin-left: 65px;
-  margin-bottom: 43px;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
+  display: block;
+  width: 40px;
+  height: 39px;
+  margin-bottom: 22px;
+  border: 2px solid @font-color;
+
 }
 
-.form__color-input:checked + .form__color-label::after {
-  content: "";
-  width: 28px;
-  height: 30px;
-  position: absolute;
-  top: -4px;
-  left: -60px;
-  background: url("../img/icon-tick.svg") no-repeat;
+.form__color-input:checked + .form__color-label {
+   background: url("../img/icon-tick.svg") no-repeat;
+  background-position: center;
 }
 
 .form__name-wrapper {
-  padding-top: 15px;
+  padding-top: 30px;
+}
+
+.form__name {
+  padding-top: 10px;
 }
 
 .form__name-label {
@@ -128,6 +150,10 @@
   border-left: none;
 }
 
+.form__phone {
+  padding-top: 5px;
+}
+
 .form__phone-input {
   display: block;
   padding-top: 30px;
@@ -139,7 +165,7 @@
 }
 
 .form__mail {
-  padding-top: 15px;
+  padding-top: 40px;
 }
 
 .form__mail-input {
@@ -153,7 +179,8 @@
 }
 
 .form__additional {
-  padding-top: 20px;
+  padding-top: 48px;
+  padding-bottom: 55px;
 }
 
 .form__additional-input {
@@ -180,6 +207,10 @@
 @media (min-width: 768px) {
   .form {
     padding: 0;
+  }
+
+  .form__title {
+    padding-top: 15px;
   }
 
   .form:nth-child(2) {
@@ -237,30 +268,25 @@
   .form__color {
     display: flex;
     padding-top: 50px;
-  }
-
-  .form__color-label {
-    font-size: 19px;
+    padding-bottom: 11px;
   }
 
   .form__color-label::before {
-    width: 50px;
-    height: 48px;
-    top: -14px;
-    left: -82px;
+    top: 10px;
+    left: 80px;
+    font-size: 19px;
   }
 
-  .form__color-input:checked + .form__color-label::after {
-    width: 30px;
-    height: 30px;
-    top: 2px;
-    left: -70px;
+  .form__color-label {
+    width: 54px;
+    height: 52px;
+    font-size: 19px;
   }
 
   .form__color-items {
     width: 450px;
-    margin-left: 140px;
-    padding-top: 12px;
+    margin-left: 123px;
+    padding-top: 0;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -268,16 +294,20 @@
 
   .form__color-item {
     flex: 1;
-    margin-bottom: 15px;
+    margin-bottom: 2px;
   }
 
   .form__color-item:nth-child(odd) {
-    margin-right: 80px;
+    margin-right: 180px;
+  }
+
+  .form__color-item:nth-child(even) {
+    margin-right: 106px;
   }
 
   .form__name {
     display: flex;
-    padding-top: 50px;
+    padding-top: 35px;
     padding-bottom: 37px;
   }
 
@@ -296,7 +326,7 @@
 
   .form__name-input {
     width: 375px;
-    margin-top: 13px;
+    margin-top: 15px;
     margin-left: 20px;
     margin-bottom: 10px;
   }
@@ -320,6 +350,7 @@
 
   .form__phone-input {
     width: 75%;
+    margin-top: 25px;
     margin-left: 135px;
     padding-top: 0;
     background: @basic-color;
@@ -386,10 +417,29 @@
 
   .form__color-items {
     width: 700px;
+    margin-left: 129px;
+    margin-bottom: 5px;
   }
 
-  .form__color-item {
+  .form__color-item:nth-child(2n+1) {
     margin: 0;
+  }
+
+  .form__color-item:nth-child(even) {
+    margin: 0;
+  }
+
+  .form__color-item:nth-child(3n+1) {
+    margin-right: 152px;
+  }
+
+  .form__color-item:nth-child(3n+2) {
+    margin-right: 160px;
+  }
+
+  .form__color-item:nth-child(3n+3) {
+    margin: 0;
+    margin-right: 65px;
   }
 
   .form__additional-input {
