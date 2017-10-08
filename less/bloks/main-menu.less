@@ -1,46 +1,20 @@
-.main-menu__toggle {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 62px;
-  padding: 10px;
-  border: none;
-  background: url("../../img/icon-menu-open.svg");
-  background-position: center;
-}
-
 .main-menu__items {
   margin: 0;
   padding: 0;
 }
 
 .main-menu__item {
-  padding-top: 22px;
-  padding-bottom: 22px;
-  padding-left: 45px;
   list-style: none;
   font-size: 17px;
   border-bottom: 1px solid @header-border;
 }
 
-.main-menu__item:first-child {
-  padding-left: 88px;
-}
-
-.main-menu__item:nth-child(4) {
-  position: relative;
-}
-
-.main-menu__item:nth-child(4)::after {
-  content: "";
-  padding: 10px;
-  position: absolute;
-  top: 25px;
-  left: 15px;
-  background: url("../img/icon-search.svg") no-repeat;
-}
-
 .main-menu__link {
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
   display: inline-block;
+  text-align: center;
   font-weight: bold;
   text-decoration: none;
   color: @black-color;
@@ -50,14 +24,77 @@
   font-size: 0;
 }
 
-@media (max-width: 768px) {
-  .main-menu__item:nth-child(n+2) {
-    display: none;
-  }
+.main-menu__item:first-child {
+  position: relative;
+}
+
+.main-menu__item:nth-child(4) {
+  position: relative;
+}
+
+.main-menu__item:nth-child(5) {
+  position: relative;
+}
+
+.main-menu--closed .main-menu__item:nth-child(n+2) {
+  display: none;
+}
+
+.main-menu--nojs .main-menu__item:nth-child(-n+5) {
+  display: block;
+}
+
+.main-menu--opened .main-menu__wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  background-color: @white-color;
+}
+
+.main-menu__toggle {
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 30px;
+  left: 50%;
+  margin-left: 110px;
+  border: none;
+}
+
+.main-menu--opened .main-menu__toggle {
+  background: url("../img/icon-menu-close.svg");
+  background-position: center;
+}
+
+.main-menu--closed .main-menu__toggle {
+  background: url("../img/icon-menu-open.svg");
+  background-position: center;
+}
+
+.main-menu__item:nth-child(4)::after {
+  content: "";
+  padding: 10px;
+  position: absolute;
+  top: 25px;
+  right: 50%;
+  margin-right: 100px;
+  background: url("../img/icon-search.svg") no-repeat;
+}
+
+.main-menu__item:nth-child(5)::after {
+  content: "";
+  padding: 10px;
+  position: absolute;
+  top: 25px;
+  right: 50%;
+  margin-right: 100px;
+  background: url("../img/icon-cart.svg") no-repeat;
 }
 
 @media (max-width: 1250px) {
-  .main-menu__item:nth-child(n+7) {
+  .main-menu__item:nth-child(n+6) {
     display: none;
   }
 }
