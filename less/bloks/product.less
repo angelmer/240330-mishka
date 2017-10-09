@@ -1,6 +1,5 @@
 .product {
   padding-top: 30px;
-  padding-bottom: 50px;
 }
 
 .product__image {
@@ -8,39 +7,51 @@
 }
 
 .product__description {
+  padding-top: 25px;
+  padding-left: 27px;
+  padding-bottom: 27px;
   border: 1px solid @border-product;
+}
+
+.product__description-title {
+  width: 200px;
+  margin: 0;
+}
+
+.product__size {
+  margin-top: 5px;
+  margin-bottom: 40px;
+  font-size: 13px;
+  line-height: 30px;
 }
 
 .product__description-link {
   font-size: 17px;
 }
 
-.product__size {
-  font-size: 13px;
-  line-height: 30px;
+.product__order {
+  position: relative;
 }
 
 .product__order-price {
   font-weight: bold;
 }
 
-.product-video__title {
-  font-size: 17px;
-}
-
-.product-video__button {
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: @black-color;
+.product__order-basket {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 185px;
+  background: url(../img/icon-cart.svg) no-repeat;
 }
 
 @media (min-width: 768px) {
   .product {
     display: flex;
-    padding-bottom: 26px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 55px;
+    border: 1px solid @border-product;
   }
 
   .product__image {
@@ -50,7 +61,10 @@
 
   .product__description {
     width: 335px;
+    padding-bottom: 0;
     padding-top: 25px;
+    padding-left: 0;
+    border: none;
   }
 
   .product__description-link {
@@ -65,8 +79,8 @@
   }
 
   .product__size {
-    margin-top: 10px;
-    margin-left: 30px;
+    margin-top: 6px;
+    margin-left: 27px;
     font-size: 15px;
   }
 
@@ -78,13 +92,22 @@
     margin-left: 32px;
     font-size: 17px;
   }
+
+  .product__order-basket {
+    left: 283px;
+  }
+
+  .product:nth-child(3) .product__order {
+    margin-top: 170px;
+  }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .product {
     display: block;
     margin-right: 52px;
-    padding-top: 102px;
+    padding-top: 20px;
+    border: none;
   }
 
   .product__image {
@@ -94,15 +117,29 @@
 
   .product__description {
     width: 315px;
-    padding-bottom: 55px;
+    padding-bottom: 26px;
+    border: 1px solid @basic-color;
+  }
+
+  .product__size {
+    margin-bottom: 10px;
   }
 
   .product__order {
     margin: 0;
+    margin-top: 60px;
+  }
+
+  .product:nth-child(3) .product__order {
+    margin-top: 35px;
   }
 
   .product__order-price {
     margin-left: 25px;
     font-size: 17px;
+  }
+
+  .product__order-basket {
+    left: 260px;
   }
 }

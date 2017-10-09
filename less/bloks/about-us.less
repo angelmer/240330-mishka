@@ -33,15 +33,15 @@
   padding-right: 60px;
 }
 
-.about-us__item:nth-child(4) {
+.about-us__list:nth-child(2) .about-us__item:nth-child(1) {
   padding-right: 50px;
 }
 
-.about-us__item:nth-child(5) {
+.about-us__item:nth-child(2) {
   padding-right: 10px;
 }
 
-.about-us__item:nth-child(6) {
+.about-us__item:nth-child(3) {
   padding-right: 60px;
 }
 
@@ -101,15 +101,31 @@
     line-height: 22px;
   }
 
+  .about-us__item:nth-child(2) {
+    width: 270px;
+  }
+
   .about-us__list:nth-child(2) .about-us__item {
-    width: 390px;
+    width: 380px;
     padding-left: 37px;
+  }
+
+  .about-us__item--ball {
+    background-position: 12% 14%;
+  }
+
+  .about-us__item--rocket {
+    background-position: 10% 11%;
+  }
+
+  .about-us__item--gift {
+    background-position: 12% 8%;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .about-us {
-    padding-top: 110px;
+    padding-top: 107px;
   }
 
   .about-us__title {
@@ -118,11 +134,39 @@
     line-height: 57px;
   }
 
+  .about-us__item {
+    padding-top: 60px;
+  }
+
   .about-us__list:nth-child(1) {
     margin-left: 175px;
   }
 
   .about-us__list:nth-child(2) {
     margin-left: 20px;
+  }
+
+  .about-us__item--flower {
+    background-position: 3% 5%;
+  }
+
+  .about-us__item--money {
+    background-position: 0 5%;
+  }
+
+  .about-us__item--heart {
+    background-position: 3% 10%;
+  }
+
+  .about-us__item--ball {
+    background-position: 11% 7%;
+  }
+
+  .about-us__item--rocket {
+    background-position: 9% 8%;
+  }
+
+  .about-us__item--gift {
+    background-position: 11% 8%;
   }
 }

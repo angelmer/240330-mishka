@@ -8,16 +8,16 @@
 <body>
 <header class="header">
   <div class="container">
-    <nav class="main-menu  main-menu--closed  main-menu--nojs">
+    <nav class="main-menu  main-menu--closed main-menu--nojs">
       <div class="main-menu__wrapper">
         <ul class="main-menu__items">
           <li class="main-menu__item">
-            <a href="index.html" class="main-menu__link">
+            <a class="main-menu__link" href="index.html">
               <div class="main-menu__logo">mishka
                 <img class="main-menu__logo--mobile" src="img/logo-mobile.svg" width="85" height="40" alt="logo"/>
               </div>
             </a>
-            <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
+            <button class="main-menu__toggle" type="button" value="Открыть меню"><span class="visually-hidden">открыть меню</span></button>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link">
@@ -36,7 +36,7 @@
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">
-              корзина: пока пуста
+              Корзина: пока пуста
             </a>
           </li>
           <li class="main-menu__item">
@@ -74,7 +74,7 @@
       <div class="product__description">
         <h2 class="product__description-title">
           <a class="product__description-link">
-            Зайчик попрыгайчик
+            Зайчик-попрыгайчик
           </a>
         </h2>
         <p class="product__size">
@@ -126,7 +126,7 @@
         </p>
         <div class="product__order">
           <a class="product__order-price">
-            1500 руб.
+            1 500 руб.
           </a>
           <a href="#" class="product__order-basket">
           </a>
@@ -180,25 +180,27 @@
     </div>
   </div>
 </footer>
-<div class="container">
-  <form class="modal" method="post" action="https://echo.htmlacademy.ru">
-    <h2 class="modal__title">
-      Добавить в корзину
-    </h2>
-    <p class="modal__choose">
-      Выберите размер:
-    </p>
-    <label class="modal__item" for="size-s">S
-      <input type="radio" name="size" id="size-s" class="modal__size modal__size--s"/>
-    </label>
-    <label class="modal__item" for="size-m">M
-      <input type="radio" name="size" id="size-m" class="modal__size modal__size--m"/>
-    </label>
-    <label class="modal__item" for="size-l">L
-      <input type="radio" name="size" id="size-l" class="modal__size modal__size--l"/>
-    </label>
-    <button type="submit" class="button modal__button">добавить</button>
-  </form>
-</div>
+<form class="modal" method="post" action="https://echo.htmlacademy.ru">
+  <h2 class="modal__title">
+    Добавить в корзину
+  </h2>
+  <p class="modal__choose">
+    Выберите размер:
+  </p>
+  <label class="modal__item" for="size-s">S
+    <input type="radio" name="size" id="size-s" class="modal__size modal__size--s"/>
+  </label>
+  <label class="modal__item" for="size-m">M
+    <input type="radio" name="size" id="size-m" class="modal__size modal__size--m"/>
+  </label>
+  <label class="modal__item" for="size-l">L
+    <input type="radio" name="size" id="size-l" class="modal__size modal__size--l"/>
+  </label>
+  <button type="submit" class="button modal__button">добавить</button>
+</form>
+<div class="modal__overlay"></div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+</script>
+<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
