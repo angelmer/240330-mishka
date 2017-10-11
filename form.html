@@ -8,16 +8,16 @@
 <body>
 <header class="header">
   <div class="container">
-    <nav class="main-menu  main-menu--closed  main-menu--nojs">
+    <nav class="main-menu  main-menu--closed main-menu--nojs">
       <div class="main-menu__wrapper">
         <ul class="main-menu__items">
           <li class="main-menu__item">
-            <a href="index.html" class="main-menu__link">
+            <a class="main-menu__link" href="index.html">
               <div class="main-menu__logo">mishka
                 <img class="main-menu__logo--mobile" src="img/logo-mobile.svg" width="85" height="40" alt="logo"/>
               </div>
             </a>
-            <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
+            <button class="main-menu__toggle" type="button" value="Открыть меню"><span class="visually-hidden">открыть меню</span></button>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="catalog.html">
@@ -36,7 +36,7 @@
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="#">
-              корзина: пока пуста
+              Корзина: пока пуста
             </a>
           </li>
           <li class="main-menu__item">
@@ -210,5 +210,8 @@
     </div>
   </div>
 </footer>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+</script>
+<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 <body>
 <header class="header">
   <div class="container">
-    <nav class="main-menu  main-menu--closed  main-menu--nojs">
+    <nav class="main-menu  main-menu--closed main-menu--nojs">
       <div class="main-menu__wrapper">
         <ul class="main-menu__items">
           <li class="main-menu__item">
@@ -17,7 +17,7 @@
                 <img class="main-menu__logo--mobile" src="img/logo-mobile.svg" width="85" height="40" alt="logo"/>
               </div>
             </a>
-            <button class="main-menu__toggle" type="button" value="Открыть меню"></button>
+            <button class="main-menu__toggle" type="button" value="Открыть меню"><span class="visually-hidden">открыть меню</span></button>
           </li>
           <li class="main-menu__item">
             <a class="main-menu__link" href="catalog.html">
@@ -68,7 +68,7 @@
     </div>
   </div>
   <section class="navigation">
-    <div class="container">
+    <div class="container container__navigation">
       <ul class="navigation__button">
         <li class="navigation__item">
           <a class="navigation__link" href="#">
@@ -159,7 +159,7 @@
       </ul>
       <div class="reviews__author">
         <p class="reviews__author-name">Анастасия Красильникова</p>
-      <a href="#" class="reviews__autor-mail">@misssssiskras</a>
+      <a href="#" class="reviews__autor-mail">@missssiskras</a>
       </div>
       <div class="reviews__slider-control">
         <div class="reviews__slider-left"></div>
@@ -189,7 +189,7 @@
         </p>
       </div>
     </div>
-    <div class="map">
+    <div class="map" id="map">
     </div>
     <div class="container">
       <div class="contacts__review">
@@ -226,7 +226,6 @@
     </div>
   </div>
 </footer>
-<div class="container">
   <form class="modal" method="post" action="https://echo.htmlacademy.ru">
     <h2 class="modal__title">
       Добавить в корзину
@@ -245,6 +244,9 @@
     </label>
     <button type="submit" class="button modal__button">добавить</button>
   </form>
-</div>
+<div class="modal__overlay"></div>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+</script>
+<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
