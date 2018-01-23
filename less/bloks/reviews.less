@@ -84,6 +84,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 55px;
+    background: url('../img/review@1x.jpg') no-repeat;
   }
 
   .reviews__title {
@@ -135,6 +136,12 @@
   .reviews__slider-right {
     border: none;
     padding-left: 22px;
+  }
+
+  @media(min-resolution: 2dppx) {
+    .reviews {
+      background: url('../img/review@2x.jpg') no-repeat;
+    }
   }
 }
 
