@@ -13,6 +13,7 @@
 }
 
 .about-us__item {
+  position: relative;
   padding-bottom: 19px;
   padding-top: 64px;
   font-size: 17px;
@@ -37,34 +38,10 @@
   padding-right: 60px;
 }
 
-.about-us__item--flower {
-  background: url("../img/icon-feature-flower.svg") no-repeat;
-  background-position: 3% 12%;
-}
-
-.about-us__item--money {
-  background: url("../img/icon-feature-money.svg") no-repeat;
-  background-position: 0 11%;
-}
-
-.about-us__item--heart {
-  background: url("../img/icon-feature-heart.svg") no-repeat;
-  background-position: 3% 16%;
-}
-
-.about-us__item--ball {
-  background: url("../img/icon-feature-ball.svg") no-repeat;
-  background-position: 1% 14%;
-}
-
-.about-us__item--rocket {
-  background: url("../img/icon-feature-rocket.svg") no-repeat;
-  background-position: 0 14%;
-}
-
-.about-us__item--gift {
-  background: url("../img/icon-feature-gift.svg") no-repeat;
-  background-position: 1% 12%;
+.about-us__icon {
+  position: absolute;
+  top: 0;
+  fill: rgba(99,209,187, 1)
 }
 
 @media (min-width: 768px) {
@@ -101,18 +78,6 @@
     width: 380px;
     padding-left: 37px;
   }
-
-  .about-us__item--ball {
-    background-position: 12% 14%;
-  }
-
-  .about-us__item--rocket {
-    background-position: 10% 11%;
-  }
-
-  .about-us__item--gift {
-    background-position: 12% 8%;
-  }
 }
 
 @media (min-width: 1150px) {
@@ -136,29 +101,5 @@
 
   .about-us__list:nth-child(2) {
     margin-left: 20px;
-  }
-
-  .about-us__item--flower {
-    background-position: 3% 5%;
-  }
-
-  .about-us__item--money {
-    background-position: 0 5%;
-  }
-
-  .about-us__item--heart {
-    background-position: 3% 10%;
-  }
-
-  .about-us__item--ball {
-    background-position: 11% 7%;
-  }
-
-  .about-us__item--rocket {
-    background-position: 9% 8%;
-  }
-
-  .about-us__item--gift {
-    background-position: 11% 8%;
   }
 }

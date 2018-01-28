@@ -1,6 +1,7 @@
 /**
  * Created by merimax on 07.10.2017.
  */
+/* Yandex map configuration */
 ymaps.ready(init);
 
 function init() {
@@ -23,6 +24,7 @@ function init() {
   map.geoObjects.add(placemark);
 }
 
+/* main-menu  mobile version */
 var toggler = document.querySelector('.main-menu__toggle');
 var mainMenu = document.querySelector('.main-menu');
 mainMenu.classList.remove('main-menu--nojs');

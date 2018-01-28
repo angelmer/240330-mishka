@@ -8,9 +8,14 @@
 }
 
 .contacts__list {
+  position: relative;
   padding-top: 10px;
   padding-bottom: 37px;
   line-height: 30px;
+}
+
+.contacts__list-icon {
+  display: none;
 }
 
 .contacts__list-item {
@@ -66,6 +71,13 @@
 
   .contacts__list {
     padding-bottom: 60px;
+  }
+
+  .contacts__list-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -90px;
   }
 
   .contacts__list-item {
